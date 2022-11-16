@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes as Switch, Navigate } from "react-router-dom"
 import { Dashboard } from "../pages"
+import { Login } from "../pages"
 
 export const Rotas = () => {
 
@@ -8,7 +9,7 @@ export const Rotas = () => {
         <BrowserRouter>
             <Switch>
                 <Route  path="/inicial" element={<Dashboard /> } />
-                <Route path="entrar" element={<h1>Entrar</h1>} />
+                <Route path="entrar" element={<Login />} />
                 <Route path="*" element={<Navigate to="/inicial" />} />
             </Switch>
         </BrowserRouter>
