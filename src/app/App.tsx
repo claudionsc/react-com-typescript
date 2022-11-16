@@ -1,10 +1,9 @@
 import React from 'react';
+import { Rotas } from "./routes"
 
 export const App = () => {
   return (
-    <div className="App">
-      <h1>Funcionando</h1>
-    </div>
+    <Rotas />
   );
 }
 
