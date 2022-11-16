@@ -8,8 +8,8 @@ export const Rotas = () => {
         <BrowserRouter>
             <Switch>
                 <Route  path="/inicial" element={<Dashboard /> } />
-                <Route path="entrar" element={<h1>Rotas</h1>} />
-                <Route path="*" element={<Navigate to="/pagina-inicial" />} />
+                <Route path="entrar" element={<h1>Entrar</h1>} />
+                <Route path="*" element={<Navigate to="/inicial" />} />
             </Switch>
         </BrowserRouter>
 
