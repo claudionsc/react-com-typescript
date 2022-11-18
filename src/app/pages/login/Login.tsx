@@ -18,6 +18,14 @@ export const Login = () => {
     const handleEntrar = useCallback(() => {
        console.log(email)
        console.log(senha)
+
+       const value = ['a']
+
+       if(inputPasswordRef.current !== null){
+       value.push(inputPasswordRef.current.value)
+
+       console.log(value)
+    }
     }, [email, senha])
 
 
